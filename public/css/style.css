@@ -1,0 +1,123 @@
+/* Specific styles for the authors section */
+.authors-section .position-relative {
+    position: relative;
+}
+
+.authors-section .position-relative:hover .position-absolute {
+    display: block; /* Show icons on hover */
+}
+
+.authors-section .position-absolute {
+    display: none; /* Initially hide the icons */
+    z-index: 1; /* Ensure icons are above the image */
+    right: 10px; /* Adjust as needed */
+    top: 10px; /* Adjust as needed */
+}
+
+/* Color styles for the icons */
+.authors-section .text-edit {
+    color: blue; /* Color for edit icon */
+}
+
+.authors-section .text-delete {
+    color: red; /* Color for delete icon */
+}
+
+/* Specific styles for the books section */
+.books-section .position-relative {
+    position: relative;
+}
+
+.books-section .position-relative:hover .position-absolute {
+    display: block; /* Show icons on hover */
+}
+
+.books-section .position-absolute {
+    display: none; /* Initially hide the icons */
+    z-index: 1; /* Ensure icons are above the image */
+    right: 1px; /* Align to top-right */
+    top: 1px; /* Adjust as needed */
+}
+
+/* Color styles for the icons */
+.books-section .text-edit {
+    color: blue; /* Edit icon color */
+}
+
+.books-section .text-delete {
+    color: red; /* Delete icon color */
+}
+
+/* Specific styles for the categories section */
+.categories-section .position-relative {
+    position: relative;
+}
+
+.categories-section .position-relative:hover .position-absolute {
+    display: block; /* Show icons on hover */
+}
+
+.categories-section .position-absolute {
+    display: none; /* Initially hide the icons */
+    z-index: 1; /* Ensure icons are above the image */
+    right: 1px; /* Align to top-right */
+    top: 1px; /* Adjust as needed */
+}
+
+/* Color styles for the icons */
+.categories-section .text-edit {
+    color: blue; /* Edit icon color */
+}
+
+.categories-section .text-delete {
+    color: red; /* Delete icon color */
+}
+
+/* Tooltip styling for better appearance */
+[data-toggle="tooltip"] {
+    cursor: pointer;
+}
+
+
+/*books carousel section*/ 
+.custom-carousel .carousel-controls {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.custom-carousel .carousel-control-prev, .custom-carousel .carousel-control-next {
+    width: 40px;
+    height: 40px;
+}
+
+/* Add a max-height for the card body to ensure consistent height */
+.categories-section .card {
+    max-height: 300px; /* Adjust the height as needed */
+    overflow: hidden;
+}
+
+/* Ensure text inside the card doesn't overflow */
+.categories-section .card-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%; /* Make sure the title doesn't expand beyond the card */
+}
+
+/* Ensure icons and buttons are still positioned correctly */
+.categories-section .position-absolute {
+    z-index: 1;
+    top: 10px; /* Adjust as needed */
+    right: 10px; /* Adjust as needed */
+}
+
+
+.carousel-caption h5 {
+    font-family: 'Montserrat', sans-serif;
+}
+.carousel-caption p {
+    font-family: 'Open Sans', sans-serif;
+}
